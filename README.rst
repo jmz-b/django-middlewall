@@ -40,7 +40,7 @@ Quick start
 
     # take advantage of the X_FORWARDED_FOR support in ipware
 
-    MIDDLEWALL_ADDRESS_GETTER = 'ipware.ip.get_real_ip'
+    MIDDLEWALL_ADDRESS_GETTER = 'ipware.ip.get_ip'
 
 Refs
 ----
