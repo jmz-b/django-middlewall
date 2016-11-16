@@ -17,7 +17,7 @@ Quick start
 
 2. Enable middleware components, eg ::
 
-    # enable both white and black listing, prioritize blacklist
+    # enable both white and black listing
 
     MIDDLEWARE = [
         'middlewall.middleware.BlacklistMiddleware',
