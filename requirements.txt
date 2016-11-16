@@ -1,3 +1,2 @@
 django>=1.8
 netaddr==0.7.18
-django-ipware==1.1.6
