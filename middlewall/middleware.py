@@ -9,12 +9,11 @@ try:
 except ImportError:
     MiddlewareMixin = object
 
+DEFAULT_GETTER = 'middlewall.utils.get_remote_addr'
+
 
 def get_ipaddr(request):
-    path = getattr(
-        settings,
-        'MIDDLEWALL_ADDRESS_GETTER',
-        'middlewall.utils.get_remote_addr')
+    path = getattr(settings. 'MIDDLEWALL_ADDRESS_GETTER', DEFAULT_GETTER)
     func = import_string(path)
     return IPAddress(func(request))
 
