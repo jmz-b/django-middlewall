@@ -7,7 +7,7 @@ Simple middleware for blocking requests by IP Address
 Quick start
 -----------
 
-1. Add middlewall to INSTALLED_APPS, eg ::
+1. Add middlewall to INSTALLED_APPS, eg::
 
     INSTALLED_APPS = [
         ...
@@ -15,7 +15,7 @@ Quick start
     ]
 
 
-2. Enable middleware components, eg ::
+2. Enable middleware components, eg::
 
     # enable both white and black listing
 
@@ -25,7 +25,7 @@ Quick start
         ...
     ]
 
-3. Define access lists in CIDR notation, eg ::
+3. Define access lists in CIDR notation, eg::
 
     # only allow requests from these subnets
 
@@ -36,7 +36,7 @@ Quick start
     MIDDLEWALL_BLACKLIST = ['192.0.2.1/32']
 
 4. (optional) Define a custom function to get remote addresses from request
-   objects, eg ::
+   objects, eg::
 
     # take advantage of the X_FORWARDED_FOR support in ipware
 
