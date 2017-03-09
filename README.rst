@@ -8,6 +8,9 @@ Django Middlewall
 .. image:: https://travis-ci.org/jmz-b/django-middlewall.svg?branch=master
     :target: https://travis-ci.org/jmz-b/django-middlewall
 
+.. image:: https://codecov.io/gh/jms-b/django-middlewall/branch/master/graph/badge.svg
+    :target: https://codecov.io/gh/jmz-b/django-middlewall
+
 Simple middleware for blocking requests by IP Address
 
 
