@@ -55,8 +55,6 @@ objects:
 
     MIDDLEWALL_ADDRESS_GETTER = 'ipware.ip.get_ip'
 
-Add Django Middlewall's URL patterns:
-
 
 Running Tests
 -------------
