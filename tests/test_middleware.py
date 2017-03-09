@@ -1,3 +1,13 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+"""
+test_django-middlewall
+------------
+
+Tests for `django-middlewall` middleware module.
+"""
+
 from django.test import SimpleTestCase
 from django.test import Client
 from django.test import override_settings

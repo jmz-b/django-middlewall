@@ -1,21 +1,30 @@
-=================
-django-middlewall
-=================
+=============================
+Django Middlewall
+=============================
 
 Simple middleware for blocking requests by IP Address
 
-Quick start
------------
 
-1. Add middlewall to INSTALLED_APPS, eg::
+Quickstart
+----------
 
-    INSTALLED_APPS = [
+Install Django Middlewall::
+
+    pip install django-middlewall
+
+Add it to your `INSTALLED_APPS`:
+
+.. code-block:: python
+
+    INSTALLED_APPS = (
         ...
-        'middlewall',
-    ]
+        'middlewall.apps.MiddlewallConfig',
+        ...
+    )
 
+Enable middleware components:
 
-2. Enable middleware components, eg::
+.. code-block:: python
 
     # enable both white and black listing
 
@@ -25,7 +34,9 @@ Quick start
         ...
     ]
 
-3. Define access lists in CIDR notation, eg::
+Define access lists in CIDR notation:
+
+.. code-block:: python
 
     # only allow requests from these subnets
 
@@ -35,15 +46,36 @@ Quick start
 
     MIDDLEWALL_BLACKLIST = ['192.0.2.1/32']
 
-4. (optional) Define a custom function to get remote addresses from request
-   objects, eg::
+(optional) Define a custom function to get remote addresses from request
+objects:
+
+.. code-block:: python
 
     # take advantage of the X_FORWARDED_FOR support in ipware
 
     MIDDLEWALL_ADDRESS_GETTER = 'ipware.ip.get_ip'
 
-Refs
-----
+Add Django Middlewall's URL patterns:
 
-* ipware_
+
+Running Tests
+-------------
+
+::
+
+    source <YOURVIRTUALENV>/bin/activate
+    (myenv) $ pip install -e .[test]
+    (myenv) $ pip install tox
+    (myenv) $ tox
+
+
+Credits
+-------
+
+*  Cookiecutter_
+*  `cookiecutter-djangopackage`_
+*  ipware_
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`cookiecutter-djangopackage`: https://github.com/pydanny/cookiecutter-djangopackage
 .. _ipware: https://github.com/un33k/django-ipware

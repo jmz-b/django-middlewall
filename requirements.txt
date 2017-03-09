@@ -1,2 +1,2 @@
-django>=1.8
-netaddr==0.7.18
+Django>=1.8,<1.10
+netaddr>=0.7,<0.8

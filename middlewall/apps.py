@@ -1,7 +1,6 @@
-from django.apps import AppConfig as DjangoAppConfig
-from django.utils.translation import ugettext_lazy as _
+# -*- coding: utf-8
+from django.apps import AppConfig
 
 
-class AppConfig(DjangoAppConfig):
-    label = name = 'middlewall'
-    verbose_name = _("middlewall middleware")
+class MiddlewallConfig(AppConfig):
+    name = 'middlewall'

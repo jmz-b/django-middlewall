@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from netaddr import IPAddress, IPSet
 
 from django.conf import settings
@@ -13,7 +14,7 @@ DEFAULT_GETTER = 'middlewall.utils.get_remote_addr'
 
 
 def get_ipaddr(request):
-    path = getattr(settings. 'MIDDLEWALL_ADDRESS_GETTER', DEFAULT_GETTER)
+    path = getattr(settings, 'MIDDLEWALL_ADDRESS_GETTER', DEFAULT_GETTER)
     func = import_string(path)
     return IPAddress(func(request))
 
