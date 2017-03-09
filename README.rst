@@ -5,6 +5,9 @@ Django Middlewall
 .. image:: https://badge.fury.io/py/django-middlewall.svg
     :target: https://badge.fury.io/py/django-middlewall
 
+.. image:: https://travis-ci.org/jmz-b/django-middlewall.svg?branch=master
+    :target: https://travis-ci.org/jmz-b/django-middlewall
+
 Simple middleware for blocking requests by IP Address
 
 
